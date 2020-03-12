@@ -1,2 +1,2 @@
-# https://www.silvercrescent.org
+# www.silvercrescent.org
 The personal website of Keith Tachibana
