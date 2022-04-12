@@ -1,8 +1,6 @@
 body {
   font-family: Tahoma, sans-serif;
   font-size: 1.25rem;
-  max-width: 100vw;
-  overflow-x: hidden;
 }
 
 .nav {
@@ -38,39 +36,85 @@ header {
   font-family: 'Metal Mania', sans-serif;
 }
 
-.image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.photo-container {
+  position: relative;
 }
 
-#img0002-greenpoint-tattoo {
-  transform: rotate(180deg);
+.mySlides {
+  display: none;
 }
 
-#img0005-downtown-santander-plaza {
-  transform: rotate(90deg);
+.cursor {
+  cursor: pointer;
 }
 
-#img0002-eiffel-tower {
-  transform: rotate(90deg);
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-#img0001-entrance-to-burbank-terminal {
-  transform: rotate(90deg);
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-#img0004-inside-cockpit {
-  transform: rotate(90deg);
+.prev:hover,
+.next:hover {
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
-#img0005-me-and-matt-barnes {
-  transform: rotate(-90deg);
+a[onclick="plusSlides(-1)"],
+a[onclick="plusSlides(1)"] {
+  font-size: 4em;
 }
 
-#img0006-outside-dallas-hq {
-  transform: rotate(-90deg);
+.numbertext {
+  color: yellow;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 13%;
 }
 
-#img0007-me-and-jordan-farmar {
-  transform: rotate(-90deg);
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+
+#caption {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.photo-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.photo-column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }

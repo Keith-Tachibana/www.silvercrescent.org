@@ -1,0 +1,9 @@
+{
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  }
+}
